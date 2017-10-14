@@ -23,10 +23,10 @@
 			var $toolbar = $('<div></div>').appendTo(this.container);
 			$toolbar.addClass('availability-calendar-toolbar');
 
-			this.$monthLabel = $('<span></span>').appendTo($toolbar);
+			this.$monthLabel = $('<p></p>').appendTo($toolbar);
 			var $inputContainer = $('<span></span>').appendTo($toolbar);
 
-			$inputContainer.append('<input type="button" title="This month" value="This Month">');
+			//$inputContainer.append('<input type="button" title="This month" value="This Month">');
 			$inputContainer.append('<input type="button" title="Previous month" value="&#10094;">');
 			$inputContainer.append('<input type="button" title="Next month" value="&#10095;">');
 

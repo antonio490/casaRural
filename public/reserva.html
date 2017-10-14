@@ -5,7 +5,6 @@
 <link rel="stylesheet" type="text/css" href="css/reserva.css" />
 <link rel="stylesheet" type="text/css" href="css/calendar.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href="css/calendar.css" rel="stylesheet" type="text/css">
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
 <!-- Latest compiled and minified CSS -->
@@ -19,7 +18,7 @@
 
 <div class="container">
 <header>
-  <p>Reserva</p>
+  <p></p>
   <a href="index.html" class="btn"><span class="glyphicon glyphicon-home"></span>  Inicio</a>
   <a href="imagenes.html" class="btn"><span class="glyphicon glyphicon-picture"></span>  Imagenes</a>
   <a href="localizacion.html" class="btn"><span class="glyphicon glyphicon-map-marker"></span>  Como llegar</a>
@@ -42,6 +41,10 @@
      <input type="number" class="form-control" id="personas" name="personas" placeholder="Número de personas" max = "8" min = "2">
    </div>
    <div class="form-group-date">
+     <label for="telefono">Teléfono:</label>
+     <input type="tel" class="form-control" id="telefono" placeholder="Indique número de teléfono" name="telefono">
+   </div>
+   <div class="form-group-date">
      <label for="date_in">Fecha de entrada:</label>
      <input type="date" class="form-control" id="date_in"  name="date_in">
    </div>
@@ -57,6 +60,7 @@
  </form>
 </article>
 <aside>
+
   <div id="calendar"></div>
 
 </aside>
@@ -70,6 +74,7 @@
 <td><img src="icons/map.png"></img> &nbsp Arturo Soria 9, Madrid 28019, España</td>
 <td><img src="icons/email.png"></img> &nbsp antoniosc@gmail.com</td>
 <td><img src="icons/iphone.png"></img> &nbsp +34 678123456</td>
+<td><img src="icons/instagram.png"></img> &nbsp @casaRural1876</td>
 </tr>
 </footer>
 </body>

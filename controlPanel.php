@@ -2,9 +2,9 @@
 
  # Init the MySQL Connection
   if( !( $db = mysql_connect( 'localhost' , 'root' , '' ) ) )
-    die( 'Failed to connect to MySQL Database Server - #'.mysql_errno().': '.mysql_error();
+    die( 'Failed to connect to MySQL Database Server - #'.mysql_errno().': '.mysql_error());
   if( !mysql_select_db( 'ram' ) )
-    die( 'Connected to Server, but Failed to Connect to Database - #'.mysql_errno().': '.mysql_error();
+    die( 'Connected to Server, but Failed to Connect to Database - #'.mysql_errno().': '.mysql_error());
 
  # Prepare the INSERT Query
   $insertTPL = 'INSERT INTO `name` VALUES( "%s" , "%s" , "%s" , "%s" )';

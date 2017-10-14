@@ -1,13 +1,16 @@
 /**
  * Calendar toolbar
  */
+
+
+
 .availability-calendar-toolbar {
-	padding-bottom: 15px;
-	font-size: 1.4em;
+	padding-bottom: 10px;
+	font-size: 0.8em;
 	font-weight: bold;
 }
 
-.availability-calendar-toolbar span:last-child {float: right}
+.availability-calendar-toolbar span:last-child {float: right; margin-right: 80px;}
 
 .availability-calendar-toolbar input {
 	padding: 7px 14px;
@@ -49,23 +52,24 @@
  */
 
 .availability-calendar {
-	width: 80%;
+	width: 90%;
 	background: #FFF;
 	table-layout: fixed;
 	border-collapse: collapse;
-
 }
 
 .availability-calendar th, .availability-calendar td {
 	border: 3px solid #8d7858;
 	padding: 5px;
 
+
 }
 
 .availability-calendar td {
-	height: 70px; 100
+	height: 80px; 100
 	vertical-align: top;
 	text-align: center;
+
 }
 
 .availability-calendar .ex-month {opacity: 0.4}

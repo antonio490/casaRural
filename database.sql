@@ -8,10 +8,11 @@ CREATE TABLE Reservas (
     ID int NOT NULL AUTO_INCREMENT,
     Nombre varchar(255),
     Email varchar(255),
-    numero int(4),
-    Comment text,
+    Numero int(4),
+    Comentario text,
     Entrada date,
     Salida date,
+    Telefono int(6),
     PRIMARY KEY(ID)
 
 );
