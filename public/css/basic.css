@@ -1,0 +1,691 @@
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+@font-face{
+   font-family: "fuente1";
+   src: url('fuentes/summer.ttf');
+}
+
+@font-face{
+   font-family: "fuente2";
+   src: url('fuentes/soft.ttf');
+}
+
+
+body{
+  /**background:#1b1b2b;**/
+  background: #ffd0b6; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+}
+
+#container{
+  width: 100%;
+  height: 90%;
+
+}
+
+header{
+    padding: 0em;
+    clear: left;
+    text-align: center;
+}
+
+article {
+    padding: 1em;
+    overflow: hidden;
+    width: 50%;
+    margin-right: 40px;
+}
+
+h1{
+  font-family: "fuente2";
+  font-size: 96px;
+  font-weight: normal;
+  margin: 15px !important;
+}
+
+
+a{
+	text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+img{
+  float: right;
+  width: 400px;
+  height: 250px;
+  border:solid 2px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+  
+}
+
+.img4{
+  margin-left: 15px;
+  box-shadow: 5px 5px 2px #888888;
+  width: 300px;
+  height: 200px;
+}
+
+
+.btn-over{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  
+}
+
+
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 850px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 90%;
+}
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+.slider-img{
+  width: 100%;
+  height: 500px;
+
+}
+
+.frame {
+  background-color:#ddc;
+  border:solid 2vmin #eee;
+  border-bottom-color:#22130c;
+  border-left-color:#22130c;
+  border-radius:2px;
+  border-right-color:#22130c;
+  border-top-color:#22130c;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin:1vh 1vw;
+  height:20em;
+  padding:2vmin;
+  position:relative;
+  text-align:right;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
+
+
+.title{
+  text-align: center;
+  text-decoration: underline;
+  color: #8d7858;
+  font-size: 36px;
+}
+
+.toprule {
+  background-color: #8d7858;
+  border: none;
+  height: 2px;
+  width: 100%;
+}
+
+p {
+
+  text-align: justify;
+  font-size: 16px;
+  color: #444;
+  font-family: 'Noticia Text', 'Georgia', serif;
+  line-height: 2.0rem;
+  padding-left : 20px;
+  padding-right: 20px;
+ 
+}
+
+#count{
+  float: right;
+}
+
+article p:first-of-type {
+  margin-top: 3rem;
+
+}
+
+.next {
+    background-color: #9baece;
+    color: black;
+}
+
+.next:hover, .previous:hover{
+  background-color: #999999;
+  color: black;
+}
+
+.previous {
+    background-color: #9baece;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.drop {
+
+  color: #8d7858;
+  float: left;
+  font-size: 5.618rem;
+  margin-right: 5px;
+  margin-top: .25rem;
+  padding: .4rem .5rem .7rem .5rem;
+}
+
+
+form{
+  width: 55%;
+  float: right;
+}
+
+.login{
+  height: 30%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 6%;
+}
+
+#form-group-date input{
+
+  margin-bottom: 6px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 1px grey;
+  width: 300px;
+  height: 28px;
+  text-indent: 10px;
+  z-index: 2;
+}
+
+#form-group-date input:hover{
+  box-shadow: 2px 2px 2px grey;
+}
+
+
+
+.form-control{
+  width: 200px;
+  border: 1px solid black;
+  z-index: 2px;
+}
+
+
+#formulario{
+  margin-left: 7%;
+  margin-right: 1%;
+  width: 35%;
+  text-align: left;
+}
+
+
+#formulario td{
+  width: 300px;
+}
+
+#formulario label{
+  font-size: 17px;
+}
+
+#formulario input{
+
+  border-radius: 1px;
+  box-shadow: 1px 1px 1px grey;
+  width: 300px;
+  height: 28px;
+  text-indent: 10px;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+#formulario input:hover{
+  box-shadow: 2px 2px 2px grey;
+}
+
+#formulario textarea{
+  border-radius: 1px;
+  box-shadow: 1px 1px 1px grey;
+  width: 300px;
+  height: 60px;
+  resize: none;
+  z-index: 2;
+}
+
+#formulario textarea:hover{
+  box-shadow: 2px 2px 2px grey;
+}
+
+
+
+/************************************/
+
+.btnLogin{
+  color:black;
+  background: #9baece;
+ border: none;
+ font-size: 12px;
+ text-transform:uppercase;
+ border-radius: 5px;
+ padding:10 20px;
+ font-weight: 4px;
+ width: 300px;
+ height: 28px;
+ margin-top: 15px;
+}
+
+.btnLogin:hover{
+  background:rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  color: black;
+  box-shadow: 1px 1px;
+}
+
+
+#menu {
+	padding-bottom: 10px;
+}
+
+.btn{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius: 5px;
+  border: 1px solid black;
+
+}
+
+.btn:hover{
+  background:rgba(0, 0, 0, 0);
+  background:;
+  color: black;
+  border: 1px solid black;
+}
+
+.btnExtra{
+  color:#fff;
+  background: #9baece;
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.btnExtra:hover{
+  background:rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  color: black;
+}
+
+.btnAdmin{
+	color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  font-size:10px;
+	padding:8px 10px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+	border-radius: 5px;
+	position: absolute;
+	right:15px;
+	top: 20px;
+  border: none;
+
+}
+
+.btnAdmin:hover{
+	background:rgba(0, 0, 0, 0.4);
+	background:#b79758;
+	color: white;
+	text-decoration: none;
+
+}
+
+.btnLogout:hover{
+	background:rgba(0, 0, 0, 0.4);
+	background:#b79758;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.btnLogout{
+	color:#fff;
+	background:rgba(0, 0, 0, 0.5);
+	font-size:10px;
+	padding:8px 10px;
+	text-decoration:none;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	border-radius: 5px;
+	position:fixed;
+	left:15px;
+	top:10px;
+	visibility: hidden;
+}
+
+.btnSubmit{
+  width: 120px;
+  height: 30px;
+  border-radius: 2px;
+  background-color:;
+  margin-top: 10px;
+  font-family: ;
+  font-weight: 4px;
+  border: 1px solid black;
+  z-index: 3;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.btnSubmit:hover{
+  box-shadow: 2px 2px 2px grey;
+}
+
+
+
+
+hr{
+  margin-top: 30px;
+  background-color: #8d7858;
+  border: none;
+  height: 2px;
+  width: 100%;
+}
+
+
+
+#mapa{
+
+  width: 95%;
+  margin-right: 2%;
+  margin-left: 2%;
+  height: 30%;
+  z-index: 4;
+
+}
+
+#main{
+  width: 50%;
+  float: left;
+  height: 800px;
+}
+
+
+#footer{
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  clear: both;
+  margin-top: 40px;
+  height:15%;   
+  background: #333030;
+}
+
+/*********************************************************/
+
+.note-contain {
+  margin-top: 30px;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.note {
+  color: black;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+  display: block;
+  margin: 45px 0 0 0;
+  text-align: center;
+}
+
+.author {
+  text-align: right;
+  margin: 15px 15px 20px 0;
+}
+
+.pinup {
+  background :#f0e9a0;
+  -webkit-transform: rotate(3.5deg);
+  -moz-transform: rotate(3.5deg);
+  -o-transform: rotate(3.5deg);
+  -ms-transform: rotate(3.5deg);
+  transform: rotate(3.5deg);
+}
+
+#footer table{
+  text-align: center;
+  float: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+#footer tr{
+  width: 100%
+
+}
+
+#footer td{
+  font-size: 14px;
+  color: #ffd0b6;
+  width: 20%;
+  margin-top: 20px;
+
+}
+
+#footer th{
+  text-decoration: ;
+  font-weight: 2px;
+  font-size: 18px;
+  color: #ffd0b6;
+}
+
+#ico{
+  color: white;
+}
+
+#footer a{
+  padding: 0px;
+  margin: 0px;
+  display: initial;
+  color: #ffd0b6;
+}
+
+#icon{
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 0px;
+
+}
+
+#instagram{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #3978b1 ;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+#instagram:hover{
+  background-color: #79aad6;
+}
+
+/* Precios */
+
+#costes{
+  width: 80%;
+  float: center;
+
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.precios{
+  text-align: left;
+  margin-top: 60px;
+  float: center;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 100px;
+}
+
+.precios td{
+  color: black;
+  font-weight: 5px;
+  font-size: 18px;
+}
+
+.precios th{
+  padding-bottom: 20px !important;
+  font-weight: 22px;
+  font-size: 24px;
+  color: black;
+}
+
+.tarifas{
+  margin-top: 60px;
+  border: 2px solid black;
+  float:center;
+  margin-left: 5%;
+  width: 90%;
+  margin-right: 5%;
+  margin-bottom: 200px;
+}
+
+.tarifas td{
+  height: 35px;
+  color: black;
+  font-size: 18px;
+  font-weight: 8px;
+  background-color: #9baece;
+
+}
+
+.tarifas th{
+  background-color: white ;
+  color: black;
+  font-size: 22px;
+  font-weight: 8px;
+}
+
+/* thumbnails */
+
+#thumbnails img {
+    width: 25%;
+    height: 120px;
+}
+
+#thumbnails{
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 200px;
+}
+
+#thumbnails ul{
+  list-style-type: none;
+}
+
+#thumbnails li{
+  display: block;
+}
+
+
+/*  Calendar */
+
+#calendar{
+
+  margin-top: 40px;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+
+#name-val, #email-val, #num-val, #dateIn-val, #dateOut-val{
+  color: red;
+  font-size: 10px;
+}

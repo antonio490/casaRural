@@ -1,0 +1,126 @@
+
+@font-face{
+   font-family: "fuente1";
+   src: url('fuentes/summer.ttf');
+}
+
+
+@font-face{
+   font-family: "fuente2";
+   src: url('fuentes/typer.otf');
+}
+
+div.container{
+  width: 100%;
+}
+
+header{
+    padding: 1em;
+    clear: left;
+    text-align: center;
+}
+
+footer{
+  width: 100%;
+  background-color: #8d7858;
+  color: black;
+  font-size: 16px;
+  font-family: "fuente2";
+  font-weight: bold;;
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+
+  bottom: 0;
+  position: fixed;
+
+}
+
+
+article {
+  width: 65%;
+  height: 90%;
+  margin-top: 20px;
+}
+
+aside{
+  float: right;
+  width: 60%;
+
+}
+
+body{
+  /**background:#1b1b2b;**/
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p{
+  font-family: "fuente1";
+  font-size: 110px;
+  text-align: center;
+  padding: 8px;
+}
+
+tr, td{
+  height: 30px;
+  width: 1%;
+  white-space: nowrap;
+  text-align: left !important;
+}
+
+table{
+  margin-left: 20px;
+}
+
+
+.btn{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.btnSubmit{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "fuente2";
+  padding: 5px 15px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: ;
+  border-radius: 6px;
+  box-shadow: 1px 1px;
+}
+
+.btnSubmit:hover{
+  background: #C3C0C3;
+  box-shadow: 0px 0px;
+}
+
+form{
+  width: 50%;
+  float: left;
+  margin-left: 30px;
+}
+
+textarea{
+  resize: none;
+}
+
+.form-group-date{
+  padding-bottom: 12px;
+}
+
+
+.btn:hover{
+  background:rgba(0, 0, 0, 0.4);
+  background:#b2b2ff;
+  color:#fff;
+  /**padding:20px 20px; #000;**/
+}

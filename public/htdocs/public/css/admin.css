@@ -1,0 +1,91 @@
+
+@font-face{
+   font-family: "fuente1";
+   src: url('fuentes/summer.ttf');
+}
+
+div.container{
+  width: 100%;
+}
+
+header, footer {
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 250px;
+    margin: 0;
+
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-left: 180px;
+  width: 600px;
+}
+
+body{
+  /**background:#1b1b2b;**/
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p{
+  font-family: "fuente1";
+  font-size: 110px;
+  text-align: center;
+  padding: 8px;
+}
+
+
+.btn{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:15px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+}
+
+.btn_submit{
+  width: 220px;
+  margin: 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background:#b2b2ff;
+  color:#fff;
+}
+
+table{
+}
+
+tr{
+  border-top: 10px solid transparent;
+
+}
+
+td{
+  width: 250px;
+}
+
+
+.input_form{
+  padding-bottom: 50px;
+  width: 800px;
+}
+
+
+.btn:hover{
+  background:rgba(0, 0, 0, 0.4);
+  background:#b2b2ff;
+  color:#fff;
+  /**padding:20px 20px; #000;**/
+
+}

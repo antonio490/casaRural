@@ -1,0 +1,32 @@
+[debug] [2017-10-29T10:07:14.327Z] ----------------------------------------------------------------------
+[debug] [2017-10-29T10:07:14.330Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2017-10-29T10:07:14.330Z] CLI Version:   3.12.0
+[debug] [2017-10-29T10:07:14.330Z] Platform:      linux
+[debug] [2017-10-29T10:07:14.330Z] Node Version:  v6.11.3
+[debug] [2017-10-29T10:07:14.330Z] Time:          Sun Oct 29 2017 11:07:14 GMT+0100 (CET)
+[debug] [2017-10-29T10:07:14.330Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-29T10:07:14.342Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-29T10:07:14.342Z] > authorizing via signed-in user
+[debug] [2017-10-29T10:07:14.344Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-29T10:07:14.344Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/gXPAT_aEkWp2spsQi8od7psMNZm5prdfdlUkYSl4Cno',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Oct 29 2017 11:07:14 GMT+0100 (CET)
+[debug] [2017-10-29T10:07:14.551Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T10:07:14.578Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/casarural-78aea  
+ Sun Oct 29 2017 11:07:14 GMT+0100 (CET)
+[debug] [2017-10-29T10:07:15.502Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T10:07:15.503Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/casarural-78aea/tokens  
+ Sun Oct 29 2017 11:07:15 GMT+0100 (CET)
+[debug] [2017-10-29T10:07:16.327Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'casarural-78aea'...
+[info] 
+[info] i  deploying database, hosting
+[info] ✔  database: rules ready to deploy.
+[info] i  hosting: preparing public directory for upload...
+[debug] [2017-10-29T10:07:24.327Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/casarural-78aea/uploads/-KxbaNumCvKrL088ePCG?fileCount=96&message=  
+ Sun Oct 29 2017 11:07:24 GMT+0100 (CET)

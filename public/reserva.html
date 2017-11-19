@@ -2,103 +2,100 @@
 <html>
 <head>
 <title>Reserva</title>
-<link rel="stylesheet" type="text/css" href="css/reserva.css" />
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
 <link rel="stylesheet" type="text/css" href="css/calendar.css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href="css/calendar.css" rel="stylesheet" type="text/css">
-<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
 </head>
 <body>
+<div id="container">
+    <header>
+     <h1>Reserva</h1>
+      <a href="index.php" class="btn">Historía</a>
+      <a href="casa.html" class="btn">Nuestra casa</a>
+      <a href="casa-fotos.html" class="btnExtra">Galería</a>
+      <a href="entorno.html" class="btnExtra">Entorno</a>
 
-<div class="container">
-<header>
-  <p>Reserva</p>
-  <a href="index.html" class="btn"><span class="glyphicon glyphicon-home"></span>  Inicio</a>
-  <a href="imagenes.html" class="btn"><span class="glyphicon glyphicon-picture"></span>  Imagenes</a>
-  <a href="localizacion.html" class="btn"><span class="glyphicon glyphicon-map-marker"></span>  Como llegar</a>
-  <a href="reserva.html" class="btn"><span class="glyphicon glyphicon-calendar"></span>  Reserva</a>
-</header>
+    </header>
   <hr>
-
-<article>
-  <form name="formulario" action="" onsubmit="return validateForm()" method="post">
-   <div class="form-group-date">
-     <label for="name">Nombre:</label>
-     <input type="name" class="form-control" id="name" placeholder="Escriba su nombre" name="name">
-   </div>
-   <div class="form-group-date">
-     <label for="email">Email:</label>
-     <input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email">
-   </div>
-   <div class="form-group-date">
-     <label for="personas">Número de personas:</label>
-     <input type="number" class="form-control" id="personas" name="personas" placeholder="Número de personas" max = "8" min = "2">
-   </div>
-   <div class="form-group-date">
-     <label for="date_in">Fecha de entrada:</label>
-     <input type="date" class="form-control" id="date_in"  name="date_in">
-   </div>
-   <div class="form-group-date">
-     <label for="date_out">Fecha de salida:</label>
-     <input type="date" class="form-control" id="date_out"  name="date_out">
-   </div>
-   <div class="form-group-date">
-  <label for="comment">Comentario:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
 </div>
+
+
+  <div id="calendar">
+
+   
+    <form id="formulario" action="form.php" onsubmit="return validateForm()" method="POST">
+    <table>
+      <tr>
+        <td><label for="name">Nombre:</label>
+        <input type="name" class="form-control" id="name" placeholder="Escriba su nombre" name="name">
+        <span id="name-val"></span></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email">
+        <span id="email-val"></span></td>
+      </tr>
+      <tr>
+        <td><label for="personas">Número de personas:</label>
+        <input type="personas" class="form-control" id="personas" name="personas" placeholder="Número de personas" max = "5" min = "1"><span id="num-val"></span></td>
+      </tr>
+      <tr>
+        <td><label for="date_in">Fecha de entrada:</label>
+        <input type="date" class="form-control" id="date_in"  name="date_in">
+        <span id="dateIn-val"></span></td>
+      </tr>
+      <tr>
+        <td><label for="date_out">Fecha de salida:</label>
+        <input type="date" class="form-control" id="date_out"  name="date_out">
+        <span id="dateOut-val"></span></td>
+      </tr>
+      <tr>
+        <td><label for="comment">Comentario:</label>
+        <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+        <span id="com-val"></span></td>
+      </tr>
+    </table>
    <button type="submit" id="btnSubmit" class="btnSubmit">Enviar</button>
  </form>
-</article>
-<aside>
-  <div id="calendar"></div>
+  </div>
 
-</aside>
+ 
 
+
+<div id="footer">
+  <table>
+  <tr><th>Contacto</th>
+  <th>Normativa</th>
+  <th>Sitios de interés</th>
+  <td><button id="instagram">@casaRural1786</button></td>
+  </tr>
+  <tr>
+  <td>casaRural1786@gmail.com</td>
+  <td><a href="localizacion.html">Normas de la casa</a></td>
+  <td><a href="http://www.campilloderanas.es/turismo">Turismo Campillo de ranas</a></td></tr>
+  <td></td>
+  <tr>
+  <td>Teléfono:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
 </div>
 
-<footer>
-<br>
-<table class="footer-table">
-<tr>
-<td><img src="icons/map.png"></img> &nbsp Arturo Soria 9, Madrid 28019, España</td>
-<td><img src="icons/email.png"></img> &nbsp antoniosc@gmail.com</td>
-<td><img src="icons/iphone.png"></img> &nbsp +34 678123456</td>
-</tr>
-</footer>
 </body>
+
 <script src="formulario.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="availability-calendar.js"></script>
 <script>
-var unavailableDates = [
-{start: '2015-08-31', end: '2015-09-05'},
-    {start: '2017-10-11', end: '2017-10-18'},
-    {start: '2015-09-15', end: '2015-09-23'},
-    {start: '2015-10-01', end: '2015-10-07'}
-];
+
+var unavailableDates = [];
 
 $('#calendar').availabilityCalendar(unavailableDates);
 </script>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </html>

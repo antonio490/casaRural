@@ -1,0 +1,268 @@
+* {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+@font-face{
+   font-family: "fuente1";
+   src: url('fuentes/summer.ttf');
+}
+
+@font-face{
+   font-family: "fuente2";
+   src: url('fuentes/soft.ttf');
+}
+
+body{
+  /**background:#1b1b2b;**/
+  background: #ffd0b6; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding:75px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+}
+
+header, footer {
+    padding: 0em;
+    clear: left;
+    text-align: center;
+}
+
+article {
+    padding: 1em;
+    overflow: hidden;
+}
+
+h1{
+  font-family: "fuente2";
+  font-size: 96px;
+  font-weight: normal;
+  margin: 15px !important;
+}
+
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 850px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 90%;
+}
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+.title{
+  text-align: left;
+  text-decoration: underline;
+  color: #8d7858;
+  font-family: 'Noticia Text', 'Georgia', serif;
+  font-size: 36px;
+}
+
+.toprule {
+  background-color: #8d7858;
+  border: none;
+  height: 2px;
+  width: 100%;
+}
+
+p {
+
+  text-align: justify;
+  font-size: 16px;
+  color: #444;
+  font-family: 'Noticia Text', 'Georgia', serif;
+  line-height: 2.0rem;
+  padding-left : 20px;
+  padding-right: 20px;
+ 
+}
+
+article p:first-of-type {
+  margin-top: 3rem;
+
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.previous {
+    background-color: #5d3434;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.drop {
+
+  color: #8d7858;
+  float: left;
+  font-size: 5.618rem;
+  margin-right: 5px;
+  margin-top: .25rem;
+  padding: .4rem .5rem .7rem .5rem;
+}
+
+
+#menu {
+  padding-bottom: 10px;
+}
+
+.btn{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius: 5px;
+}
+
+
+.btn:hover{
+  background:rgba(0, 0, 0, 0.4);
+  background:#b79758;
+  color: white;
+}
+
+
+
+.footer{
+  font-size:8px;
+  color:#fff;
+  clear:both;
+  display:block;
+  letter-spacing:5px;
+  border:1px solid #fff;
+  padding:5px;
+  text-decoration:none;
+  width:210px;
+  margin:auto;
+  margin-top:400px;
+}
+
+hr{
+  margin-top: 30px;
+  background-color: #8d7858;
+  border: none;
+  height: 2px;
+  width: 100%;
+}
+
+
+/*************************************/
+.container {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  position: absolute;
+  width: 400;
+  height: 250px;
+  float: right;
+  margin-left: 25px;
+}
+
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}

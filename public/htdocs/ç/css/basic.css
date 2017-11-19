@@ -1,0 +1,377 @@
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+@font-face{
+   font-family: "fuente1";
+   src: url('fuentes/summer.ttf');
+}
+
+@font-face{
+   font-family: "fuente2";
+   src: url('fuentes/soft.ttf');
+}
+
+body{
+  /**background:#1b1b2b;**/
+  background: #ffd0b6; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding:75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+}
+
+div.container{
+  width: 100%;
+}
+
+header, footer {
+    padding: 0em;
+    clear: left;
+    text-align: center;
+}
+
+article {
+    padding: 1em;
+    overflow: hidden;
+}
+
+h1{
+  font-family: "fuente2";
+  font-size: 96px;
+  font-weight: normal;
+  margin: 15px !important;
+}
+
+
+a{
+	text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+img{
+  float: right;
+  width: 400px;
+  height: 250px;
+  border:solid 2px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+  
+}
+
+.img4{
+  margin: 15px;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+
+.btn-over{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  
+}
+
+
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 850px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 90%;
+}
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+.slider-img{
+  width: 100%;
+  height: 500px;
+
+}
+
+.frame {
+  background-color:#ddc;
+  border:solid 2vmin #eee;
+  border-bottom-color:#22130c;
+  border-left-color:#22130c;
+  border-radius:2px;
+  border-right-color:#22130c;
+  border-top-color:#22130c;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin:1vh 1vw;
+  height:20em;
+  padding:2vmin;
+  position:relative;
+  text-align:right;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
+
+
+.title{
+  text-align: center;
+  text-decoration: underline;
+  color: #8d7858;
+  font-family: 'Noticia Text', 'Georgia', serif;
+  font-size: 36px;
+}
+
+.toprule {
+  background-color: #8d7858;
+  border: none;
+  height: 2px;
+  width: 100%;
+}
+
+p {
+
+  text-align: justify;
+  font-size: 16px;
+  color: #444;
+  font-family: 'Noticia Text', 'Georgia', serif;
+  line-height: 2.0rem;
+  padding-left : 20px;
+  padding-right: 20px;
+ 
+}
+
+#count{
+  float: right;
+}
+
+article p:first-of-type {
+  margin-top: 3rem;
+
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.previous {
+    background-color: #5d3434;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.drop {
+
+  color: #8d7858;
+  float: left;
+  font-size: 5.618rem;
+  margin-right: 5px;
+  margin-top: .25rem;
+  padding: .4rem .5rem .7rem .5rem;
+}
+
+
+form{
+  width: 30%;
+  float: right;
+}
+
+.login{
+  height: 30%;
+}
+
+.form-group-date{
+  margin-top: 20px;
+}
+
+.form-control{
+  width: 220px;
+  height: 20px;
+  border: 1px solid black;
+
+}
+
+.btnLogin{
+ background: #ffc04c; /* this is a green */
+ border: none;
+ width: 220px;
+ height: 20px;
+ margin-top: 15px;
+}
+
+.btnLogin:hover{
+  color: black;
+  box-shadow: 1px 1px;
+}
+
+
+#menu {
+	padding-bottom: 10px;
+}
+
+.btn{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius: 5px;
+  border: 1px solid black;
+
+}
+
+.btn:hover{
+  background:rgba(0, 0, 0, 0);
+  background:#b79758;
+  color: black;
+  border: 1px solid black;
+}
+
+.btnExtra{
+  color:#fff;
+  background: #9baece;
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.btnExtra:hover{
+  background:rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  color: black;
+}
+
+.btnAdmin{
+	color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  font-size:10px;
+	padding:8px 10px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+	border-radius: 5px;
+	position: absolute;
+	right:15px;
+	top: 20px;
+  border: none;
+
+}
+
+.btnAdmin:hover{
+	background:rgba(0, 0, 0, 0.4);
+	background:#b79758;
+	color: white;
+	text-decoration: none;
+
+}
+
+.btnLogout:hover{
+	background:rgba(0, 0, 0, 0.4);
+	background:#b79758;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.btnLogout{
+	color:#fff;
+	background:rgba(0, 0, 0, 0.5);
+	font-size:10px;
+	padding:8px 10px;
+	text-decoration:none;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	border-radius: 5px;
+	position:fixed;
+	left:15px;
+	top:10px;
+	visibility: hidden;
+}
+
+
+
+.footer{
+  font-size:8px;
+  color:#fff;
+  clear:both;
+  display:block;
+  letter-spacing:5px;
+  border:1px solid #fff;
+  padding:5px;
+  text-decoration:none;
+  width:210px;
+  margin:auto;
+  margin-top:400px;
+}
+
+hr{
+  margin-top: 30px;
+  background-color: #8d7858;
+  border: none;
+  height: 2px;
+  width: 100%;
+}
+
+
+/*******************************************/
+
+

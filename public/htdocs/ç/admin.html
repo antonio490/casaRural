@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casa Rural</title>
+<link rel="stylesheet" type="text/css" href="admin.css" />
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="es" />
+
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+  var config = {
+    apiKey: "AIzaSyBZ9LMOczrrzFh0qE-hgDAW4gYPkQ_UPv4",
+    authDomain: "casarural-78aea.firebaseapp.com",
+    databaseURL: "https://casarural-78aea.firebaseio.com",
+    storageBucket: "casarural-78aea.appspot.com"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <p>Casa Rural</p>
+      <a href="index.html" class="btn">Inicio</a>
+      <a href="imagenes.html" class="btn">Imagenes</a>
+      <a href="location.html" class="btn">Como llegar</a>
+      <a href="reserva.html" class="btn">Reserva</a>
+    </header>
+
+    <article>
+      <table id="login">
+        <tr><td><input type="email" class="form-control" id="email" placeholder="email" name="email"></td></tr>
+        <tr><td><input type=password class="form-control" id="password" placeholder="contraseña" name="password"></td></tr>
+      </table>
+    <button type="submit" id="btnSubmit" class="btn_submit">Entrar</button>
+
+
+  </article>
+  </div>
+
+
+</body>
+<script src="login.js"></script>
+
+</html>

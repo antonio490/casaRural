@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casa Rural</title>
+<link rel="stylesheet" type="text/css" href="localizacion.css" />
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+  var config = {
+    apiKey: "AIzaSyBZ9LMOczrrzFh0qE-hgDAW4gYPkQ_UPv4",
+    authDomain: "casarural-78aea.firebaseapp.com",
+    databaseURL: "https://casarural-78aea.firebaseio.com",
+    storageBucket: "casarural-78aea.appspot.com"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <p class="titulo">Localización</p>
+      <a href="index.html" class="btn">Inicio</a>
+      <a href="imagenes.html" class="btn">Imagenes</a>
+      <a href="localizacion.html" class="btn">Como llegar</a>
+      <a href="reserva.html" class="btn">Reserva</a>
+    </header>
+    <hr>
+    <div id="map"></div>
+    <aside>
+      <p class="info">Información</p>
+        <table>
+          <tr>
+            <td><span class="glyphicon glyphicon-home"></span> Casa rural espigal 1, C/Calle Lopez 10 Guadalajara, España</td>
+          </tr>
+          <tr>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>  </td>
+          </tr>
+          <tr>
+            <td><span class="glyphicon glyphicon-phone-alt"></span>  123456789</td>
+          </tr>
+          <tr>
+            <td><span class="glyphicon glyphicon-envelope"></span>  email@gmail.com</td>
+          </tr>
+          <tr>
+            <td><button class="btnMap"><a href="https://www.viamichelin.es/web/Itinerarios?departure=Madrid%2C%20Espa%C3%B1a&arrival=guadalajara%20campillo%20de%20ranas&index=0&vehicle=0&type=0&distance=km&currency=EUR&highway=false&toll=false&vignette=false&orc=false&crossing=true&caravan=false&car=hatchback&fuel=petrol&fuelCost=1.36&allowance=0&corridor=&departureDate=&arrivalDate="><img class="mapa1" src="maps/mapa1.png"></img></a></button></td>
+          </tr>
+        </table>
+        <hr>
+    </aside>
+  </div>
+</body>
+<script>
+  function initMap() {
+    var myLatLng = {lat: 40.4023053, lng: -3.7304813};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Casa rural espigal 1'
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiRi-QHp72bnZqPIk-G_YDV0kjcMIrq78&callback=initMap"
+ type="text/javascript"></script>
+</html>

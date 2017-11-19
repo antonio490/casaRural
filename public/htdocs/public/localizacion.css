@@ -1,0 +1,107 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ * {
+ 	-webkit-transition-property: all;
+ 	-webkit-transition-duration: .2s;
+   -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+ 	-moz-transition-property: all;
+   -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+ }
+
+#map {
+  height: 500px;
+  width: 70%;
+  overflow: hidden;
+  padding-bottom: 22.25%;
+  padding-top: 20px;
+  position: relative;
+  margin: 0 auto;
+  margin-top:30px;
+  float: left;
+}
+
+@font-face{
+   font-family: "fuente1";
+   src: url('fuentes/summer.ttf');
+}
+
+@font-face{
+   font-family: "fuente2";
+   src: url('fuentes/typer.otf');
+}
+
+body{
+  /**background:#1b1b2b;**/
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  padding:75px;
+  font-family: 'Oswald', sans-serif;
+}
+
+header, footer {
+    padding: 0em;
+    clear: left;
+    text-align: center;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+tr{
+  width: 80%;
+  border: 5px solid transparent;
+}
+
+td{
+  font-family: "fuente2";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info{
+  text-decoration: underline;
+  font-family: "fuente2";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mapa1{
+  width: 100%;
+  height: 200px;
+}
+
+.btnMap:hover{
+  /**box-shadow: 10px 10px 5px #888888;**/
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+     filter: grayscale(100%);
+}
+
+.titulo{
+  font-family: "fuente1";
+  font-size:90px;
+  text-align: center;
+}
+
+
+.btn{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  background:rgba(0, 0, 0, 0.4);
+	background:#b79758;
+  color: white;
+}

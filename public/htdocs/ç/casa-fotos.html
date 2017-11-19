@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casa Rural</title>
+<link rel="stylesheet" type="text/css" href="css/galeria.css" />
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+    <p></p>
+      <a href="index.php" class="btn">Inicio</a>
+      <a href="localizacion.html" class="btn">Como llegar</a>
+      <a href="reserva.html" class="btn">Reserva</a>
+    </header>
+
+<hr>
+
+<ul class="top">
+  <li class="galleryItem">
+    <a class="caption" href="#1" data-title="" data-description="">
+      <img src="fotos/IMG_1.jpg" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#2" data-title="" data-description="">
+      <img src="fotos/IMG_2.jpg" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#3" data-title="" data-description="">
+      <img src="fotos/IMG_3.jpg" alt="Landscape image">
+    </a>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#4" data-title="" data-description="">
+      <img src="fotos/IMG_4.jpg" alt="Landscape image">
+    </a>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#5" data-title="" data-description="">
+      <img src="fotos/IMG_5.jpg" alt="Landscape image">
+    </a>
+  </li>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#6" data-title="" data-description="">
+      <img src="fotos/IMG_6.jpg" alt="Landscape image">
+    </a>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#7" data-title="" data-description="">
+      <img src="fotos/IMG_7.jpg" alt="Landscape image">
+    </a>
+  </li>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#8" data-title="" data-description="">
+      <img src="fotos/IMG_8.jpg" alt="Landscape image">
+    </a>
+  </li>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#9" data-title="" data-description="">
+      <img src="fotos/IMG_9.jpg" alt="Landscape image">
+    </a>
+  </li>
+   <li class="galleryItem">
+    <a class="caption" href="#10" data-title="" data-description="">
+      <img src="fotos/IMG_10.jpg" alt="Landscape image">
+    </a>
+  </li>
+</ul>
+    
+<!-- lightbox -->
+
+<div class="lightbox" id="1">
+   <div class="image">
+       <img src="fotos/IMG_1.jpg">
+          <a href="#6" class="prev"></a>
+          <a href="#" class="close"></a>
+          <a href="#2" class="next"></a>
+   </div>
+</div>
+<div class="lightbox" id="2">
+    <div class="image">
+         <img src="fotos/IMG_2.jpg">
+             <a href="#1" class="prev"></a>
+             <a href="#" class="close"></a>
+             <a href="#3" class="next"></a>
+        </div>
+    </div>
+  <div class="lightbox" id="3">
+      <div class="image">
+            <img src="fotos/IMG_3.jpg">
+                <a href="#2" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#4" class="next"></a>
+       </div>
+   </div>
+  
+
+  <!-- <ul class="galeria">
+    <li><img src="fotos/IMG_1.jpg"/></li>
+    <li><img src="fotos/IMG_2.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_3.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_4.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_5.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_6.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_7.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_8.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_9.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_10.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_11.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_12.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_13.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_14.jpg"/></li>
+    <li draggable="true"><img src="fotos/IMG_15.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_16.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_17.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_18.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_20.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_21.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_22.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_23.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_24.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_25.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_26.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_27.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_28.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_29.JPG"/></li>
+    <li draggable="true"><img src="fotos/IMG_30.JPG"/></li>
+  </ul>-->
+
+</body>
+</html>
