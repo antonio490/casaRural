@@ -14,16 +14,17 @@
      <h1>Reserva</h1>
       <a href="index.php" class="btn">Historía</a>
       <a href="casa.html" class="btn">Nuestra casa</a>
-      <a href="casa-fotos.html" class="btnExtra">Galería</a>
-      <a href="entorno.html" class="btnExtra">Entorno</a>
+      <a href="casa-fotos.html" class="btn">Galería</a>
+      <a href="" class="btnClicked">Reserva</a>
+      <a href="entorno.html" class="btn">Entorno</a>
 
     </header>
   <hr>
 </div>
 
-
-  <div id="calendar">
-
+<div id="calendario">
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffcc99&amp;src=jqle5kfsqp5s4isq3jtbg6i5qs%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FMadrid" scrolling="no"></iframe>
+</div>
    
     <form id="formulario" action="form.php" onsubmit="return validateForm()" method="POST">
     <table>
@@ -59,9 +60,73 @@
     </table>
    <button type="submit" id="btnSubmit" class="btnSubmit">Enviar</button>
  </form>
-  </div>
 
- 
+
+<hr class="toprule">
+
+<div id="normas">
+
+<div class="letter">
+  <h3 id="title" class="title">Normas de la casa</h3>
+
+<p id="part1">
+<span class="drop">L</span>
+a casa se alquila por completo, no por habitaciones, independientemente del
+número de personas que se alojen en ella y por un mínimo de dos noches.
+Al comenzar la estancia en la casa rural, los clientes recibirán las presentes
+normas para su aceptación y firma, al cumplimentar la ficha de registro, estas
+normas se consideran de obligado cumplimiento.
+Se realizara una visita a la casa verificando que tanto las dependencias como
+el mobiliario y los enseres se encuentran en perfecto estado.
+Por regla general y salvo acuerdo contrario, la entrada comenzará a partir
+de las 17:00 horas del primer día contratado, la salida se efectuará antes de
+las 13:00 horas del último día.
+Para realizar la reserva, será necesario depositar en la cuenta corriente el
+20% del total de la factura. Esta cantidad se entiende a cuenta y se descontara
+del total, que se pagara en efectivo, cuando comience la estancia.
+El alquiler incluye todo el menaje, la ropa de cama y las toallas así como leña
+para alimentar la chimenea en invierno. La limpieza de la casa corre a cargo
+de los inquilinos.
+</p>
+
+
+<p id="part2" style="display: none;">
+
+Al concluir la estancia se revisara que todo queda en buen estado en compañía
+del cliente, si se observan daños o desperfectos, este se hará cargo de los
+posibles costes de reposición y reparación de los mismos.
+Ante evidencias de vandalismo o uso imprudente de la vivienda, el propietario
+se reserva el derecho a dar por finalizado el contrato de en cualquier
+momento, debiendo los inquilinos abandonar las instalaciones
+inmediatamente.
+Si se produce la anulación de la reserva de la casa dentro de los 15 días
+anteriores al señalado para la ocupación, quedará a disposición del
+establecimiento la cantidad recibida en concepto de anticipo.
+Según establece la legislación vigente, al iniciarse la estancia en la casa, se
+rellenará la correspondiente ficha de admisión con los datos solicitados por la
+Guardia Civil, para todas las personas mayores de 16 años.
+Los ocupantes no podrán realizar en la casa actividades molestas, insalubres,
+nocivas, peligrosas o ilícitas. 
+El propietario se reserva el derecho de anular
+aquellas estancias que no cumplan las normas de convivencia, en cualquier
+momento y sin posibilidad de reembolso.
+No está permitida la estancia o pernocta de otras personas que no sean las que
+han alquilado la casa rural salvo autorización expresa del propietario.
+No se permiten animales de compañía.
+No se admite la celebración de despedidas de soltero/a ni fiestas de ningún
+tipo.
+Los propietarios de la casa rural no se hacen responsables del comportamiento
+y/o actuaciones de los inquilinos.
+</p>
+
+<br>
+<a id="previous" onclick= "previous()" class="previous round">&#8249;</a>
+<a id ="next" onclick="next()" class="next round">&#8250;</a>
+
+<p id="count">1/2</p>
+
+</div>
+</div>
 
 
 <div id="footer">
@@ -69,12 +134,12 @@
   <tr><th>Contacto</th>
   <th>Normativa</th>
   <th>Sitios de interés</th>
-  <td><button id="instagram">@casaRural1786</button></td>
+  <td><a href="https://www.pintaram.com/u/casarural1786" target="_blank"><button id="instagram">@casaRural1786</button></a></td>
   </tr>
   <tr>
   <td>casaRural1786@gmail.com</td>
-  <td><a href="localizacion.html">Normas de la casa</a></td>
-  <td><a href="http://www.campilloderanas.es/turismo">Turismo Campillo de ranas</a></td></tr>
+  <td><a href="reserva.html#normas">Normas de la casa</a></td>
+  <td><a href="http://www.campilloderanas.es/turismo" target="_blank">Turismo Campillo de ranas</a></td></tr>
   <td></td>
   <tr>
   <td>Teléfono:</td>
@@ -88,6 +153,8 @@
 </body>
 
 <script src="formulario.js"></script>
+<script src="login.js"></script>
+
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="availability-calendar.js"></script>
 <script>

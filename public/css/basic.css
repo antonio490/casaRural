@@ -18,11 +18,15 @@
 
 
 body{
-  /**background:#1b1b2b;**/
-  background: #ffd0b6; /* fallback for old browsers */
+
+  background:#8dc26f;
+  /*background: #ffd0b6; /* fallback for old browsers */
   /*background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  /*background:  #61a67a; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #6d8d58, #94b081); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #6d8d58, #81B086); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   padding-top: 15px;
   padding-bottom: 15px;
@@ -56,7 +60,6 @@ h1{
   margin: 15px !important;
 }
 
-
 a{
 	text-decoration: none;
   display: inline-block;
@@ -64,23 +67,32 @@ a{
   margin-top: 20px;
 }
 
-img{
+#img4{
+  
   float: right;
-  width: 400px;
-  height: 250px;
   border:solid 2px;
   border-bottom-color:#ffe;
   border-left-color:#eed;
   border-right-color:#eed;
   border-top-color:#ccb;
-  
-}
-
-.img4{
-  margin-left: 15px;
   box-shadow: 5px 5px 2px #888888;
   width: 300px;
   height: 200px;
+  margin-left: 15px;
+}
+
+#imgIcon{
+  margin-left: 6px;
+  width: 15px;
+  height: 15px;
+
+}
+
+#icono img{
+  margin-top:12px;
+  width: 32px;
+  height: 32px;
+  float: center;
 }
 
 
@@ -173,7 +185,9 @@ img{
   text-align: center;
   text-decoration: underline;
   color: #8d7858;
-  font-size: 36px;
+  font-family: "fuente2";
+  font-size: 66px;
+  font-weight: normal;
 }
 
 .toprule {
@@ -183,16 +197,28 @@ img{
   width: 100%;
 }
 
-p {
-
-  text-align: justify;
-  font-size: 16px;
-  color: #444;
-  font-family: 'Noticia Text', 'Georgia', serif;
-  line-height: 2.0rem;
-  padding-left : 20px;
-  padding-right: 20px;
+  p {
+      text-align: justify;
+      font-size: 16px;
+      color: #444;
+      font-family: 'Noticia Text', 'Georgia', serif;
+      line-height: 2.0rem;
+      padding-left : 20px;
+      padding-right: 20px;
  
+  }
+
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 12px;
+        text-align: justify;
+        color: #444;
+        font-family: 'Noticia Text', 'Georgia', serif;
+        line-height: 2.0rem;
+        padding-left : 20px;
+        padding-right: 20px;
+    }
 }
 
 #count{
@@ -272,10 +298,10 @@ form{
 
 
 #formulario{
-  margin-left: 7%;
-  margin-right: 1%;
   width: 35%;
+  float:right;
   text-align: left;
+  margin-top: 10%;
 }
 
 
@@ -347,7 +373,8 @@ form{
 
 .btn{
   color:#fff;
-  background:rgba(0, 0, 0, 0.5);
+  background: #8d7858;
+
   padding:10px 20px;
   font-size:12px;
   text-decoration:none;
@@ -383,9 +410,22 @@ form{
   color: black;
 }
 
+.btnClicked{
+  border-radius: 5px;
+  border: 1px solid black;
+  text-decoration:none;
+  text-transform:uppercase;
+  padding:10px 20px;
+  font-size:12px;
+  background:rgba(0, 0, 0, 0);
+  background:;
+  color: black;
+  border: 1px solid black;
+}
+
 .btnAdmin{
 	color:#fff;
-  background:rgba(0, 0, 0, 0.5);
+  background: #8d7858;
   font-size:10px;
 	padding:8px 10px;
   text-decoration:none;
@@ -395,15 +435,14 @@ form{
 	position: absolute;
 	right:15px;
 	top: 20px;
-  border: none;
+  border: 1px solid black;
 
 }
 
 .btnAdmin:hover{
-	background:rgba(0, 0, 0, 0.4);
-	background:#b79758;
-	color: white;
-	text-decoration: none;
+  background:rgba(0, 0, 0, 0);
+  color: black;
+  border: 1px solid black;
 
 }
 
@@ -464,12 +503,17 @@ hr{
 
 #mapa{
 
-  width: 95%;
-  margin-right: 2%;
-  margin-left: 2%;
+
   height: 30%;
   z-index: 4;
 
+}
+
+#mapa iframe{
+
+  width: 95%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 #main{
@@ -688,4 +732,17 @@ hr{
 #name-val, #email-val, #num-val, #dateIn-val, #dateOut-val{
   color: red;
   font-size: 10px;
+}
+
+#calendario iframe{
+  float:left;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 60%;
+  height: 600px;
+
+  border-radius: 1px;
+  box-shadow: 1px 1px 1px grey;
+  z-index: 2;
 }

@@ -31,6 +31,7 @@ if ($count == 1){
 <head>
 <title>Casa rural 1786</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale= 0.5"/>
 <link rel="stylesheet" type="text/css" href="css/basic.css" />
 <link rel="stylesheet" type="text/css" href="css/swipe-gallery.css" />
 
@@ -61,14 +62,11 @@ if ($count == 1){
     <button onclick="showLoginWindow()" id="btnAdmin" class="btnAdmin">Administrador</button>
     <header id="header">
       <h1>Casa rural 1786</h1>
-      <!--<a href="index.html" class="btn">Inicio</a>-->
-      <a href="casa.html" class="btn">Nuestra casa</a>
-      <a href="casa-fotos.html" class="btn">Galería</a>
-      <a href="reserva.html" class="btnExtra">Reserva</a>
-      <a href="entorno.html" class="btnExtra">Entorno</a>
-      
-      <!--<a href="#middle" class="btnExtra">Historia</a>-->
-    <!--  <a href="admin.html" class="btnAdmin">Administrador</a>-->
+      <a href="" class="btnClicked">Historía <img id="imgIcon" src="icons/forest.png"></a></a>
+      <a href="casa.html" class="btn">Casa <img id="imgIcon" src="icons/home.png"></a>
+      <a href="casa-fotos.html" class="btn">Galería <img id="imgIcon" src="icons/gallery.png"></a>
+      <a href="reserva.html" class="btn">Reserva <img id="imgIcon" src="icons/calendar.png"></a>
+      <a href="entorno.html" class="btn">Entorno <img id="imgIcon" src="icons/map.png"></a> 
     </header>
 
   <hr id="hr">
@@ -84,7 +82,7 @@ if ($count == 1){
     <li>
         <input type="radio" id="slide2" name="slide">
         <label for="slide2"></label>
-        <img src="fotos/IMG_32.JPG" alt="Panel 2">
+        <img src="fotos/IMG_15.JPG" alt="Panel 2">
     </li>
     <li>
         <input type="radio" id="slide3" name="slide">
@@ -187,13 +185,21 @@ existencia de una población estable y un creciente desarrollo turístico.
   <tr><th>Contacto</th>
   <th>Normativa</th>
   <th>Sitios de interés</th>
-  <td><button id="instagram">@casaRural1786</button></td>
+  <th>Redes Sociales</th>
+  <!--<button id="instagram">@casaRural1786</button>-->
   </tr>
   <tr>
   <td>casaRural1786@gmail.com</td>
-  <td><a href=".html">Normas de la casa</a></td>
-  <td><a href="http://www.campilloderanas.es/turismo">Turismo Campillo de ranas</a></td></tr>
-  <td></td>
+  <td><a href="reserva.html#normas">Normas de la casa</a></td>
+  <td><a href="http://www.campilloderanas.es/turismo" target="_blank">Turismo Campillo de ranas</a></td>
+  <td>
+  <a href="https://www.pintaram.com/u/casarural1786" target="_blank">
+  <img id="icono" src="icons/instagram.png" alt="instagram">
+  
+  <a href="" target="_blank">
+  <img id="icono" src="icons/facebook.png" alt="facebook">
+  </td>
+  </tr>
   <tr>
   <td>Teléfono:</td>
   <td></td>

@@ -163,6 +163,19 @@ article {
   color: black;
 }
 
+.btnClicked{
+  border-radius: 5px;
+  border: 1px solid black;
+  text-decoration:none;
+  text-transform:uppercase;
+  padding:10px 20px;
+  font-size:12px;
+  background:rgba(0, 0, 0, 0);
+  background:;
+  color: black;
+  border: 1px solid black;
+}
+
 #footer{
 
   position: absolute;
