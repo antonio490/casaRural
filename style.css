@@ -1,0 +1,21 @@
+
+.navbar-expand-lg {
+    
+    background-color: #fff4e6;
+}
+
+.nav-link{
+    color: #3c2f2f;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src:  url('ItalianBreakfast-Regular.ttf') format('woff2'),
+          url('ItalianBreakfast-Regular.otf') format('woff');
+}
+
+a{
+    font-family: 'MyWebFont';
+    font-size: 54px;
+
+}
