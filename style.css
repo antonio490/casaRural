@@ -8,6 +8,32 @@
     color: #3c2f2f;
 }
 
+
+/* Carousel base class */
+.carousel {
+    min-height: 500px;
+    max-height: 800px;
+    margin-bottom: 60px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    min-height: 500px;
+    max-height: 800px;
+
+    background-color: #777;
+  }
+
+  .d-block{
+    max-height: 800px;
+
+  }
+
+
 @font-face {
     font-family: 'MyWebFont';
     src:  url('ItalianBreakfast-Regular.ttf') format('woff2'),
