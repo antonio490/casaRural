@@ -1,6 +1,104 @@
 
+<!-- django base template 
 {% extends 'base.html' %}
 
 {% block content %}
 {% block title %}Reserva{% endblock %}
 {% endblock %}
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+
+    <!-- Header menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Casa Rural 1786</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Historía</a>
+            <a class="nav-item nav-link" href="#">Casa</a>
+            <a class="nav-item nav-link" href="#">Galería</a>
+            <a class="nav-item nav-link active" href="#">Reserva</a>
+            <a class="nav-item nav-link" href="#">Entorno</a>
+          </div>
+            <div class="nav navbar-nav ml-auto float-right" id="">
+                <a class="nav-item nav-link" href="#">
+                    <img src="instagram.png" width="30" height="30" alt="instagram">
+                </a>
+                <a class="nav-item nav-link" href="#">
+                    <img src="facebook.png" width="30" height="30" alt="facebook">
+                </a>
+            </div>
+        </div>
+      </nav>
+
+      <!-- Form -->
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName4">Nombre</label>
+            <input type="text" class="form-control" id="inputName4" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputLName4">Apellidos</label>
+            <input type="text" class="form-control" id="inputLName4" placeholder="Lastname">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+            <label for="NumPersons">Número de personas</label>
+            <select class="form-control" id="numPersons">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inDate">Fecha de entrada</label>
+            <input type="date" class="form-control" id="inDate">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="outDate">Fecha de salida</label>
+            <input type="date" class="form-control" id="outDate">
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comentario:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
