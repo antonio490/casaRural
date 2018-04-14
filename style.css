@@ -8,6 +8,12 @@
     color: #3c2f2f;
 }
 
+/* Container galeria */
+
+.container{
+  width: 100%;
+  margin-top: 20px;
+}
 
 /* Carousel base class */
 .carousel {
